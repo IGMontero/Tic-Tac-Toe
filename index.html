@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Free Code Camp - Tic Tac Toe</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="main-container">
+  <div id="game-menu" class="d-inline">
+    player 1 score: <span id="score-1">0</span> | player 2 score: <span id="score-2">0</span>
+    <a value="reset" href="#" id="reset-button" class="d-inline">
+      Reset all
+    </a>
+  </div>
+  <div id="screen">
+    <div id="win-screen"></div>
+    <div id="game-mode">
+      <p>Pick a game mode:</p>
+      <a value="one-player" href="#" class="d-inline option">One player</a>
+      <a value="two-players" href="#" class="d-inline option">Two players</a>
+    </div>
+    <div id="pick-token">
+      <p><span id="two-player-pick-text">Player One: </span>Would you like to pick O or X?</p>
+      <a value="token-o" href="#" class="d-inline option symbol">O</a>
+      <a value="token-x" href="#" class="d-inline option symbol">X</a>
+      <br>
+      <a value="back" class="option" href="#"><i class="far fa-arrow-alt-circle-left"></i>
+
+ Go back</a>
+    </div>
+    <div id="game-board">
+      <table>
+        <tr>
+          <td value="0 0"></td>
+          <td value="0 1" class="vertical"></td>
+          <td value="0 2"></td>
+        </tr>
+        <tr>
+          <td value="1 0" class="horizontal"></td>
+          <td value="1 1" class="horizontal vertical"></td>
+          <td value="1 2" class="horizontal"></td>
+        </tr>
+        <tr>
+          <td value="2 0"></td>
+          <td value="2 1" class="vertical"></td>
+          <td value="2 2"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="actual-turn">Turn : Player <span></span></div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
